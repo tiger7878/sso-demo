@@ -1,0 +1,13 @@
+security:
+  oauth2:
+    client:
+      client-id: mkapp2
+      client-secret: mkappsecrect2
+      user-authorization-uri: http://127.0.0.1:9999/server/oauth/authorize #认证地址
+      access-token-uri: http://127.0.0.1:9999/server/oauth/token #获取token地址
+    resource:
+      jwt:
+        key-uri: http://127.0.0.1:9999/server/oauth/token_key #获取签名的token_key的地址
+server:
+  port: 8060
+  context-path: /client2
